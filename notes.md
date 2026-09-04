@@ -9,9 +9,8 @@ pushed to `origin/feature/add-module4-notes` and in sync with it
 
 ## Commit History
 
-Seven commits, all authored by Nana Thompson between 2026-09-03 and 2026-09-04.
-Modules 1–3 each landed in a single self-contained commit — no rewrites of earlier
-work — followed by two housekeeping commits on this branch.
+Commit history snapshot (short SHAs) as of 2026-09-04.
+Modules 1–3 each landed in a single self-contained commit — no rewrites of earlier work — followed by housekeeping commits on this branch.
 
 Line counts below are net additions to text files; binary files (`.class`, `.pdf`,
 `.png`) contribute to the file count but not the line count.
