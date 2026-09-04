@@ -1,23 +1,30 @@
 # Repository Notes — BU CS Foundations Bootcamp
 
 **Repo:** `bu-bootcamp` (remote: `https://github.com/abeeku23/bu-bootcamp.git`)
-**Branch:** `feature/add-module4-notes` (even with `origin/main` — 0 ahead, 0 behind)
-**Last updated:** 2026-09-03
+**Branch:** `feature/add-module4-notes` — 2 commits ahead of `origin/main`, 0 behind;
+pushed to `origin/feature/add-module4-notes` and in sync with it
+**Last updated:** 2026-09-04
 
 ---
 
 ## Commit History
 
-Five commits, all authored by Nana Thompson on 2026-09-03. One commit per module,
-each adding only that module's files — no rewrites of earlier work.
+Seven commits, all authored by Nana Thompson between 2026-09-03 and 2026-09-04.
+Modules 1–3 each landed in a single self-contained commit — no rewrites of earlier
+work — followed by two housekeeping commits on this branch.
+
+Line counts below are net additions to text files; binary files (`.class`, `.pdf`,
+`.png`) contribute to the file count but not the line count.
 
 | Commit | Message | Summary |
 | --- | --- | --- |
 | `adc169e` | Initial commit | 2-line README placeholder |
-| `7d3b9ae` | Add bootcamp README with module structure | README expanded to 16 lines describing the bootcamp and module layout |
+| `7d3b9ae` | Add bootcamp README with module structure | README grew from 2 to 14 lines (+14/−2) describing the bootcamp and module layout |
 | `71d98dd` | Add Module 1 activity | Hello World + Greeting programs, plus assignment PDF (4 files, +19 lines) |
 | `5832ae1` | Add Module 2 activity | Grade Analyzer with file I/O, sample data, output PDFs (8 files, +158 lines) |
 | `320d36b` | Add Module 3 activity | Contact Manager with HashMap and sorting, plus output screenshot (5 files, +72 lines) |
+| `a8b3355` | Add Module 4 notes on Git and GitHub workflow | Created this `notes.md` (1 file, +84 lines) |
+| `ed80e84` | fix: remove .class files | Added `.gitignore` (+22 lines) and untracked the four committed `.class` files |
 
 ---
 
@@ -60,17 +67,20 @@ each adding only that module's files — no rewrites of earlier work.
 
 ## Current Working-Tree State
 
-- `notes.md` — this file; previously untracked and empty, now filled in.
-- No other modified, staged, or deleted files.
-- Module 4 work has not been committed yet.
+- Working tree is clean — nothing modified, staged, or untracked.
+- `notes.md` (this file) was committed in `a8b3355`.
+- `.gitignore` was committed in `ed80e84`; no compiled artifacts remain tracked.
+- There is no `module4/` directory; this file is the Module 4 deliverable so far.
 
 ---
 
 ## Known Issues / To Do
 
-1. **Compiled artifacts are committed.** `Greeting.class`, `GradeAnalyzer.class`,
-   `Contact.class`, and `ContactManager.class` are all tracked in git. Add a
-   `.gitignore` containing `*.class` and remove them from the index.
+1. ~~**Compiled artifacts are committed.**~~ **Resolved in `ed80e84`.** A `.gitignore`
+   covering `*.class`, archives, and build directories was added, and the four
+   tracked `.class` files were removed from the index (they remain on disk).
+   Note: they are still present in the history of `71d98dd`, `5832ae1`, and
+   `320d36b`; purging that would require a history rewrite, which is not planned.
 2. **Inconsistent package declarations.**
    - `Greeting.java` → `package bootcamp.Module1;` (capital *M*)
    - `Contact.java` / `ContactManager.java` → `package bootcamp.module3;`
@@ -81,4 +91,5 @@ each adding only that module's files — no rewrites of earlier work.
    Pick one convention — lowercase, matching the directory structure — and apply
    it consistently.
 3. **README is stale.** It lists only modules 1–3 and does not mention Module 4.
-4. **Module 4 content is still outstanding** on this branch.
+4. **Module 4 activity files are still outstanding.** The written notes are
+   committed, but no `module4/` source directory exists yet.
