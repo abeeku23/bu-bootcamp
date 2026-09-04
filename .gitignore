@@ -1,0 +1,22 @@
+# Compiled Java class files
+*.class
+
+# Java packaging / archives
+*.jar
+*.war
+*.ear
+*.nar
+
+# Build output directories
+bin/
+build/
+out/
+target/
+
+# Log and crash files
+*.log
+hs_err_pid*
+replay_pid*
+
+# macOS
+.DS_Store
