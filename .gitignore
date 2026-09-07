@@ -1,5 +1,15 @@
+# Ignore everything by default; re-include directories and files that have an extension
+**/*
+!**/
+!**/*.*
+
 # Compiled Java class files
 *.class
+
+# Compiled C files (object files; extensionless executables are caught by the blanket rule above)
+*.o
+*.obj
+*.out
 
 # Java packaging / archives
 *.jar
